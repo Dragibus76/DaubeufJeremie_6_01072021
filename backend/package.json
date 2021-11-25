@@ -1,0 +1,16 @@
+{"name": "piquante",
+  "version": "3.0.0",
+  "description": "Projet 6 OpenClassRooms(Construisez une API sécurisée pour une application d'avis gastronomiques)",
+  
+  "dependencies": {
+    "ansi-regex": "^6.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "mongoose-unique-validator": "^3.0.0",
+    "multer": "^1.4.3",
+    "regex": "^0.1.1"
+  }
+}
