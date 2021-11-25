@@ -1,4 +1,5 @@
 /* Importation de l'application express et bodyparser*/
+require('dotenv').config()
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -18,7 +19,7 @@ const userRoutes = require('./routes/user')
 const path = require('path')
 
 /* Connexion à la base de donnée MangoDB */
-mongoose.connect('mongodb+srv://dragibus:'+ myPassword.password +'@cluster0.179vo.mongodb.net/p6piquante?retryWrites=true&w=majority',
+mongoose.connect(process.env.DB_LINK,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
